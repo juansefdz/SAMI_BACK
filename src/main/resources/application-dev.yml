@@ -1,0 +1,12 @@
+# Perfil de desarrollo local. NO usar en producción.
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: ${JPA_DDL_AUTO:none}
+    show-sql: true
+
+sami:
+  security:
+    jwt:
+      # Solo para desarrollo: en otros entornos definir JWT_SECRET.
+      secret: ${JWT_SECRET:ZGV2LW9ubHktc2VjcmV0LXNhbWktY2hhbmdlLW1lLWluLXByb2R1Y3Rpb24tcGxlYXNlLTEyMzQ1Njc4OTA=}
